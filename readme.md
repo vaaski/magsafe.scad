@@ -2,11 +2,13 @@
 
 <div align="center">
   <a href="https://cadhub.xyz/draft/openscad#fetch_text_v1=https%3A%2F%2Fraw.githubusercontent.com%2Fvaaski%2Fscad-magsafe%2Fmain%2Fmagsafe.scad">
-    <img src="https://raw.githubusercontent.com/vaaski/scad-magsafe/main/render.png" />
+    <img width="600" src="https://raw.githubusercontent.com/vaaski/scad-magsafe/main/render.png" />
   </a>
 </div>
 
 ## how to use
+
+you'll need 32-53 cylindrical magnets, i recommend 4x2mm.
 
 there's a pre-rendered [`magsafe.stl`](https://github.com/vaaski/scad-magsafe/raw/main/magsafe.stl) (shown above) using default settings, but you can customize it using openSCAD.
 
