@@ -11,8 +11,8 @@ MAGNET_COUNT = 40;  // [32:2:50]
 // how deep the magnet holes are. if set to 0 they're flush. measured in layers
 MAGNET_HOLE_DEPTH = 2;  // [0:4]
 
-// enable/disable clocking magnets
-CLOCK_ENABLE = true;
+// enable/disable clocking magnets, don't use it right now, it's too weak with only 3 TODO: add more
+CLOCK_ENABLE = false;
 
 // how long the clocking part should be
 CLOCK_HEIGHT = 12;  // [10:1:17]
