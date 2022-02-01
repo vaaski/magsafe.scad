@@ -2,9 +2,9 @@
 
 ## how to use
 
-there's a pre-rendered `magsafe.stl` using default settings, you can customize it using openSCAD.
+there's a pre-rendered [`magsafe.stl`](https://github.com/vaaski/scad-magsafe/raw/main/magsafe.stl) using default settings, you can customize it using openSCAD.
 
-if you don't wan't to download openSCAD, you can use [cadhub](https://cadhub.xyz/draft/openscad) instead.
+if you don't wan't to download openSCAD, you can use [cadhub](https://cadhub.xyz/draft/openscad#fetch_text_v1=https%3A%2F%2Fraw.githubusercontent.com%2Fvaaski%2Fscad-magsafe%2Fmain%2Fmagsafe.scad) instead.
 
 ## parameters
 `RENDER_QUALITY`: set to true for final render
