@@ -32,7 +32,7 @@ MAGNET_HOLE_ROUNDING = 0.75;  // [0.25:0.25:1]
 LAYER_HEIGHT = 0.2;
 
 // layers between the magnets and the phone
-SEPARATION_LAYERS = 2; // [1:5]
+SEPARATION_LAYERS = 2;  // [1:5]
 
 module __Customizer_Limit__() {}
 
@@ -130,9 +130,7 @@ module main() {
     baseplate();
 
     // move em up
-    translate([ 0, 0, BASEPLATE_HEIGHT - MAGNET_HEIGHT + OVERLAP ]) {
-      magnet_cutouts();
-    }
+    translate([ 0, 0, BASEPLATE_HEIGHT - MAGNET_HEIGHT + OVERLAP ]) { magnet_cutouts(); }
   }
 }
 
