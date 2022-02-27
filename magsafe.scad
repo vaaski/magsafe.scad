@@ -129,5 +129,3 @@ module main() {
     translate([ 0, 0, BASEPLATE_HEIGHT - MAGNET_HEIGHT + OVERLAP ]) magnet_cutouts();
   }
 }
-
-main();
