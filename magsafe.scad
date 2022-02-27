@@ -1,8 +1,3 @@
-/* [render quality] */
-
-// set to true for final render
-RENDER_QUALITY = false;
-
 /* [main settings] */
 
 // amount of magnets you have or want to use (+3 if you enable clocking)
@@ -37,10 +32,11 @@ SEPARATION_LAYERS = 2;  // [1:5]
 module __Customizer_Limit__() {}
 
 // set quality, 64 for testing, 128 for rendering
-$fn = RENDER_QUALITY ? 128 : 64;
+$fn = $preview ? 64 : 128;
+// overlap only for preview, cus it tends to get glitchy
+OVERLAP = $preview ? 0.001 : 0;
 
 MAGNET_POSITIONS_COUNT = floor(MAGNET_COUNT / 2);
-OVERLAP = 0.001;
 
 EXTRA_HEIGHT = LAYER_HEIGHT * MAGNET_HOLE_DEPTH;
 
@@ -130,7 +126,7 @@ module main() {
     baseplate();
 
     // move em up
-    translate([ 0, 0, BASEPLATE_HEIGHT - MAGNET_HEIGHT + OVERLAP ]) { magnet_cutouts(); }
+    translate([ 0, 0, BASEPLATE_HEIGHT - MAGNET_HEIGHT + OVERLAP ]) magnet_cutouts();
   }
 }
 
